@@ -3,6 +3,7 @@ Contributors: moxypark
 Tags: tweetpaste, twitter, tweet, embed, shortcode
 Requires at least: 2.7
 Tested up to: 2.8.4
+Stable tag: 1.0.0
 
 Embed status updates from Twitter into blog posts and pages
 
@@ -12,26 +13,31 @@ This is a WordPress plugin created to allow users to paste tweets
 directly into blog posts and pages.
 
 It uses the [TweetPaste](http://tweetpaste.thingamaweb.com) API to
-obtain a block, formatted in a similar way to twitter.com
+obtain a block, formatted in a similar way to twitter.com updates.
+
+Tweets can be embedded using a simple shortcode, and there are a
+number of options available to customise the look of the blocks.
 
 == Installation ==
 
 1. Upload `tweetpaste-embed` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
+
+== Basic usage ==
+
 1. Find the tweet you wish to embed, and click its permalink (the link
 which gives the time at which the tweet was posted)
-1. Copy the numerical ID from the last portion of the web address (for
-example, the address http://twitter.com/tweetpaste/status/3689199935 gives
-the ID for 3689199935)
-1. Place `[tweet id=%id]` in a page, where %id is the numerical ID of the
-tweet you wish to embed
+1. Note down the URL of the tweet
+1. Place `[tweet url=%url]` in a page or post, where %url is
+the permalink to the tweet.
 
-You can place more options in the shortcode by looking at the Options page
+You can also simply specify the ID of the tweet using `[tweet id=%id]`.
+(The ID is the string of numbers at the end of the tweet permalink.)
 
-== Options ==
+== Customisation ==
 
 All of the following are optional, and defaults can be customised through
-the Settings > Embedded Tweets menu option in WordPress
+the Settings > Embedded tweets menu option in WordPress
 
 = iframe_width =
 
